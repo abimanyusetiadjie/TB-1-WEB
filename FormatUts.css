@@ -1,0 +1,138 @@
+/* Using relative length (em, rem), absolute length (px), and relative positioning as required */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem; /* absolute length */
+    text-align: center;
+    position: relative; /* relative positioning */
+}
+
+header h1 {
+    font-size: 2em; /* relative length */
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em; /* absolute length */
+    font-size: 1.1em; /* relative length */
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px; /* absolute length */
+    margin: 2rem auto;
+    padding: 0 2rem; /* using rem for padding */
+}
+
+.profile-section {
+    display: flex;
+    gap: 2rem; /* absolute length */
+    margin-bottom: 3rem; /* absolute length */
+    position: relative; /* relative positioning */
+    left: 1rem; /* absolute length */
+}
+
+.profile-image {
+    width: 50%; /* relative length */
+    max-width: 400px; /* absolute length */
+    height: auto; /* maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    font-size: 1.8em; /* relative length */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.achievements {
+    background-color: white;
+    padding: 2rem; /* absolute length */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievements h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.achievements ul {
+    list-style-position: inside;
+    margin-left: 1rem; /* absolute length */
+}
+
+.achievements li {
+    margin-bottom: 0.5rem; /* absolute length */
+}
+
+/* Table Styles */
+.schedule-section {
+    background-color: white;
+    padding: 2rem; /* absolute length */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem; /* absolute length */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* absolute length */
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem; /* absolute length */
+    position: relative; /* relative positioning */
+    bottom: 0;
+    width: 100%; /* absolute length */
+}
